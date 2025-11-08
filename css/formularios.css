@@ -1,0 +1,56 @@
+.w3-input, .w3-check {
+  font-size: 15px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.w3-border input[type="file"] {
+  border: none;
+  background: transparent;
+}
+
+button.pami-login {
+  background-color: #0072CE;
+  color: white;
+  border: none;
+}
+
+button.pami-login:hover {
+  background-color: #005fa3;
+}
+
+/* Adaptación para resolución web */
+
+@media (min-width: 768px) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+  }
+
+  #formAyuda, #formVoluntario {
+    width: 60%;
+    max-width: 700px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    border-radius: 12px;
+    padding: 48px;
+    margin-top: 40px;
+  }
+
+  .w3-container.w3-padding {
+    position: absolute;
+    left: 40px;
+    top: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #formAyuda, #formVoluntario {
+    width: 50%;
+    padding: 64px;
+  }
+}
