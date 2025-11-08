@@ -1,3 +1,18 @@
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+function openLoginModal() {
+  document.getElementById("loginModal").style.display = "block";
+}
+
+function closeLoginModal() {
+  document.getElementById("loginModal").style.display = "none";
+}
 // Detectar parámetro ?tipo=ayuda o ?tipo=voluntario
 document.addEventListener("DOMContentLoaded", () => {
   const params = new URLSearchParams(window.location.search);

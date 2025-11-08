@@ -7,13 +7,6 @@ function w3_close() {
 }
 
 // Modal de accion ingresar
-function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
-}
-
-function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
-}
 
 function openLoginModal() {
   document.getElementById("loginModal").style.display = "block";
