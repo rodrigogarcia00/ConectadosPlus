@@ -1,0 +1,92 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #004074 !important;
+  background-color: #f3f4f6;
+  margin: 0;
+}
+
+/* --- HEADER --- */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid #e6e6e6;
+}
+
+.user-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.logo {
+  width: 50px;
+}
+
+/* --- TÍTULO --- */
+.title {
+  color: #002b5c;
+  border-bottom: 2px solid #adc9e6;
+  padding-bottom: 6px;
+  margin-bottom: 15px;
+}
+
+/* --- TARJETAS --- */
+.card {
+  border-radius: 18px;
+  margin: 15px 0;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  overflow: hidden;
+  transition: transform 0.15s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.icon-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  height: 100%;
+
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.info-container {
+  padding: 12px 18px;
+  color: #002b5c;
+}
+
+.info-container p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* --- RESPONSIVE WEB --- */
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 10%;
+  }
+
+  .card {
+    max-width: 550px;
+    margin: 20px auto;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .info-container p {
+    font-size: 15px;
+  }
+}
