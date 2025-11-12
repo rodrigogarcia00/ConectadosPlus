@@ -53,6 +53,36 @@ body {
   font-weight: 700;
 }
 
+/* === Pills === */
+.pills-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 4px 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pill {
+  background-color: #7cd0ec;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pill:hover {
+  background-color: #56b9d8;
+}
+
 /* === Tarjetas === */
 .card {
   border-radius: 25px;
@@ -93,9 +123,9 @@ body {
   border-radius: 27px;
 }
 
-.icon-container.rojo { background-color: #EB7575; }
-.icon-container.violeta { background-color: #C998F7; }
-.icon-container.verde { background-color: #ACEB75; }
+.icon-container.azul { background-color: #84E1EB; }
+.icon-container.naranja { background-color: #FFA979; }
+.icon-container.amarillo { background-color: #F3D353; }
 
 .icon {
   width: 40px;
@@ -137,5 +167,15 @@ body {
 
   .info-container p {
     font-size: 15px;
+  }
+
+  .pills-container {
+    overflow-x: visible;
+    justify-content: space-between;
+  }
+
+  .pill {
+    flex: 1;
+    text-align: center;
   }
 }
