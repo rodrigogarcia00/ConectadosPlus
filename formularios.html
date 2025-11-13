@@ -11,8 +11,6 @@
 </head>
 <body class="w3-light-grey">
 
-    <!-- Barra superior -->
-    <!-- (versión móvil) -->
   <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-large w3-hide-medium"
       style="display:none; width:100%; background-color:#21AFF3;" id="mySidebar">
     <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Cerrar ×</button>
@@ -22,7 +20,7 @@
     <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openLoginModal(); w3_close()">Ingresar</a>
   </nav>
 
-  <!-- (versión escritorio) -->
+
   <div class="w3-bar w3-large top-bar w3-hide-small">
     <span class="w3-bar-item w3-xlarge" style="font-weight:bold;">Conectados+</span>
     <div style="margin-left: 55em;">
@@ -33,20 +31,17 @@
     </div>
   </div>
 
-  <!-- Menú hamburguesa (solo móvil) -->
   <div class="w3-bar w3-large top-bar w3-hide-medium w3-hide-large">
     <button class="w3-bar-item w3-button w3-xlarge" onclick="w3_open()">☰</button>
     <span class="w3-bar-item">Conectados+</span>
   </div>
 
-  <!-- BOTÓN VOLVER -->
   <div class="w3-container w3-padding" id="boton_volver">
     <button class="w3-button w3-border w3-round-large" onclick="volverInicio()">
       <i class="fa fa-arrow-left"></i> Volver
     </button>
   </div>
 
-  <!-- FORMULARIO NECESITO AYUDA -->
   <div id="formAyuda" class="w3-container w3-animate-opacity" style="display:none; padding:32px;">
     <h2 class="w3-text-blue w3-center">Necesito Ayuda</h2>
     <p>Completá los siguientes datos para que podamos asistirte:</p>
@@ -78,7 +73,6 @@
     </div>
     <button class="w3-button w3-green w3-block w3-round-large w3-padding-large">Continuar</button>
 
-    <!-- Opción alternativa de acceso con PAMI -->
     <div class="w3-center w3-margin-top w3-small w3-text-grey">o</div>
 
     <button class="w3-button w3-white w3-border w3-margin-top w3-round-large w3-block w3-hover-shadow"
@@ -89,7 +83,6 @@
     </button>
   </div>
 
-  <!-- FORMULARIO QUIERO AYUDAR -->
   <div id="formVoluntario" class="w3-container w3-animate-opacity" style="display:none; padding:32px;">
     <h2 class="w3-text-green w3-center">Quiero Ayudar</h2>
     <p>Dejanos tus datos para ser parte de nuestra red solidaria:</p>
@@ -132,12 +125,10 @@
     <button class="w3-button w3-green w3-block w3-round-large w3-padding-large">Registrarme</button>
   </div>
 
-  <!-- Pie -->
   <footer class="w3-container w3-teal w3-center w3-padding">
     <p>© 2025 Conectados+</p>
   </footer>
 
-    <!-- Modal de Ingreso -->
   <div id="loginModal" class="w3-modal">
     <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width:400px;">
       <div class="w3-container w3-teal">
