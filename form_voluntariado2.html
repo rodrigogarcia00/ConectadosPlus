@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Voluntariado</title>
+  <link rel="stylesheet" href="css/forms.css">
+</head>
+<body>
+<form class="formulario">
+  <h2>DATOS DOMICILIARIOS</h2>
+  <p class="subtitulo">Completá el formulario con tu información de residencia y disponibilidad</p>
+
+  <label>Provincia
+    <select name="provincia" required>
+      <option value="">Seleccioná una provincia</option>
+      <option value="Buenos Aires">Buenos Aires</option>
+      <option value="Córdoba">Córdoba</option>
+    </select>
+  </label>
+
+  <label>Localidad
+    <select name="localidad" required>
+      <option value="">Seleccioná una localidad</option>
+      <option value="Castelar">Castelar</option>
+      <option value="Morón">Morón</option>
+    </select>
+  </label>
+
+  <label>Dirección <input type="text" name="direccion" required></label>
+
+  <h2>DISPONIBILIDAD HORARIA</h2>
+
+  <fieldset class="bloque">
+    <legend>Días disponibles</legend>
+    <ul class="lista-campo dias">
+      <li><label><input type="checkbox" name="dias" value="lunes"> Lunes</label></li>
+      <li><label><input type="checkbox" name="dias" value="martes"> Martes</label></li>
+      <li><label><input type="checkbox" name="dias" value="miércoles"> Miércoles</label></li>
+      <li><label><input type="checkbox" name="dias" value="jueves"> Jueves</label></li>
+      <li><label><input type="checkbox" name="dias" value="viernes"> Viernes</label></li>
+      <li><label><input type="checkbox" name="dias" value="sábado"> Sábado</label></li>
+      <li><label><input type="checkbox" name="dias" value="domingo"> Domingo</label></li>
+    </ul>
+  </fieldset>
+
+  <fieldset class="bloque">
+    <legend>Horarios disponibles</legend>
+    <ul class="lista-campo">
+      <li><label><input type="radio" name="horario" value="mañana" required> Mañana (8:00–12:00)</label></li>
+      <li><label><input type="radio" name="horario" value="tarde"> Tarde (12:00–18:00)</label></li>
+      <li><label><input type="radio" name="horario" value="noche"> Noche (18:00–22:00)</label></li>
+    </ul>
+  </fieldset>
+
+  <div class="botones">
+    <button type="submit">CONTINUAR</button>
+    <button type="button">VOLVER</button>
+  </div>
+</form>
+</body>
+</html>
