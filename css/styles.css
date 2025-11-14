@@ -3,7 +3,7 @@ body, h1, h2, p {
 }
 
 .top-bar {
-  background-color: #4CAF50;
+  background-color: #004074;
   color: white;
 }
 
@@ -33,6 +33,11 @@ body, h1, h2, p {
 .hero-section button {
   font-weight: bold;
   letter-spacing: 1px;
+}
+
+.w3-teal {
+  background-color: #004074 !important;
+  color: white;
 }
 
 /* Modal de accion ingresar */
@@ -106,5 +111,6 @@ body, h1, h2, p {
 
   footer {
     font-size: 1em;
+    background-color: #004074;
   }
 }

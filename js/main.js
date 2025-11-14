@@ -16,6 +16,10 @@ function closeLoginModal() {
   document.getElementById("loginModal").style.display = "none";
 }
 
+function redirectToLogin() {
+    window.location.href = 'solicitudes-espera.html';
+}
+
 // Slideshow automático
 let slideIndex = 0;
 carousel();
