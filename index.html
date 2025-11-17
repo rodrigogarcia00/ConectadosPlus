@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Conectados+</title>
+
+  <!-- W3.CSS y fuentes -->
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+  <!-- Tu hoja de estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="w3-light-grey">
+
+    <!-- Barra superior -->
+    <!-- (versión móvil) -->
+  <nav class="w3-sidebar w3-bar-block w3-card w3-animate-left w3-hide-large w3-hide-medium"
+      style="display:none; width:100%; background-color:#21AFF3;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-large" onclick="w3_close()">Cerrar ×</button>
+    <a href="#inicio" class="w3-bar-item w3-button" onclick="w3_close()">Inicio</a>
+    <a href="#buscar" class="w3-bar-item w3-button" onclick="w3_close()">Buscar</a>
+    <a href="#contacto" class="w3-bar-item w3-button" onclick="w3_close()">Contacto</a>
+    <a href="javascript:void(0)" class="w3-bar-item w3-button" onclick="openLoginModal(); w3_close()">Ingresar</a>
+  </nav>
+
+  <!-- (versión escritorio) -->
+  <div class="w3-bar w3-large top-bar w3-hide-small">
+    <span class="w3-bar-item w3-xlarge" style="font-weight:bold;">Conectados+</span>
+    <div style="margin-left: 55em;">
+      <a href="#inicio" class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey">Inicio</a>
+      <a href="#buscar" class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey">Buscar</a>
+      <a href="#contacto" class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey">Contacto</a>
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-hover-none w3-hover-text-light-grey" onclick="openLoginModal()">Ingresar</a>
+    </div>
+  </div>
+
+  <!-- Menú hamburguesa (solo móvil) -->
+  <div class="w3-bar w3-large top-bar w3-hide-medium w3-hide-large">
+    <button class="w3-bar-item w3-button w3-xlarge" onclick="w3_open()">☰</button>
+    <span class="w3-bar-item">Conectados+</span>
+  </div>
+
+  <!-- Hero -->
+  <div class="hero-section" id="inicio">
+    <div class="w3-margin-bottom">
+      <h1 class="w3-text-blue w3-xlarge" style="font-weight:600; margin-bottom:4px;">Sumate a una comunidad que une generaciones y multiplica la ayuda.</h1>
+      <p class="w3-text-grey" style="font-size:14px; margin-top:0;">Promovemos la unión entre generaciones a través de la confianza y la tecnología.</p>
+    </div>
+
+        <!-- HERO con slideshow automático -->
+    <div class="w3-content w3-display-container" style="max-width:100%; position:relative;">
+
+      <!-- Imágenes del slideshow -->
+      <img class="mySlides" src="img/conectados-home.jpg" style="width:100%; display:block;">
+      <img class="mySlides" src="img/conectados-paseo-perro.png" style="width:100%; display:none;">
+      <img class="mySlides" src="img/conectados-compras.jpg" style="width:100%; display:none;">
+      <img class="mySlides" src="img/conectados-mantenimiento.jpg" style="width:100%; display:none;">
+
+      <!-- Controles opcionales -->
+      <div class="w3-center w3-container w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(4)"></span>
+      </div>
+
+    </div>
+
+    <!-- Botones principales -->
+    <div class="w3-container" style="width:80%; max-width:400px;">
+      <button class="w3-button w3-blue w3-block w3-round-large w3-padding-large w3-margin-bottom"
+              style="font-weight:bold; letter-spacing:1px;"
+              onclick="window.location.href='formularios.html?tipo=ayuda'">
+        NECESITO AYUDA
+      </button>
+
+      <button class="w3-button w3-green w3-block w3-round-large w3-padding-large"
+              style="font-weight:bold; letter-spacing:1px;"
+              onclick="window.location.href='formularios.html?tipo=voluntario'">
+        QUIERO AYUDAR
+      </button>
+    </div>
+
+    <p class="w3-text-grey" style="font-size:13px; margin-top:25px;">
+      Una red solidaria segura y cercana
+    </p>
+  </div>
+
+  <!-- Pie -->
+  <footer class="w3-container w3-teal w3-center w3-padding">
+    <p>© 2025 Conectados+</p>
+  </footer>
+
+  <!-- Modal de Ingreso -->
+  <div id="loginModal" class="w3-modal">
+    <div class="w3-modal-content w3-animate-top w3-card-4" style="max-width:400px;">
+      <div class="w3-container w3-teal">
+        <span onclick="closeLoginModal()" class="w3-button w3-display-topright">&times;</span>
+        <h3>Ingresar</h3>
+      </div>
+
+      <div class="w3-container w3-padding">
+        <label><b>Correo electrónico</b></label>
+        <input class="w3-input w3-border w3-margin-bottom" type="email" placeholder="ejemplo@correo.com" required>
+
+        <label><b>Contraseña</b></label>
+        <input class="w3-input w3-border" type="password" placeholder="••••••••" required>
+
+        <button class="w3-button w3-green w3-block w3-section w3-round-large" onclick="redirectToLogin()">Ingresar</button>
+
+        <div class="w3-center w3-margin-top w3-text-grey">o</div>
+
+        <button class="w3-button w3-white w3-border w3-margin-top w3-round-large w3-block w3-hover-shadow" onclick="loginConPami()">
+          <img src="img/PAMI-Logo.svg.png" 
+              alt="PAMI" style="height:18px; vertical-align:middle; margin-right:8px;">
+          Ingresar con mi cuenta PAMI
+        </button>
+
+        <div class="w3-center w3-small w3-margin-top">
+          <a href="#" class="w3-text-blue">¿Olvidaste tu contraseña?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script>
+    // Detectar parámetro en URL
+    window.addEventListener("DOMContentLoaded", () => {
+      const params = new URLSearchParams(window.location.search);
+      if (params.get("abrirLogin") === "true") {
+        openLoginModal();
+      }
+    });
+  </script>
+</body>
+</html>

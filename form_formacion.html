@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario Voluntariado</title>
+  <link rel="stylesheet" href="css/formacion.css">
+</head>
+<body>
+<form class="formulario">
+  <h2>FORMACIÓN</h2>
+  <p class="subtitulo">Completá tu información académica y profesional</p>
+
+  <fieldset class="bloque">
+    <legend>¿Actualmente está estudiando?</legend>
+    <ul class="lista-campo">
+      <li><label><input type="radio" name="estudia" value="si" required> Sí</label></li>
+      <li><label><input type="radio" name="estudia" value="no"> No</label></li>
+    </ul>
+  </fieldset>
+
+  <label>Localidad de la institución <input type="text" name="localidad_estudio"></label>
+  <label>Institución en la que estudia <input type="text" name="institucion_estudio"></label>
+
+  <fieldset class="bloque">
+    <legend>¿Actualmente está practicando una pasantía?</legend>
+    <ul class="lista-campo">
+      <li><label><input type="radio" name="pasantia" value="si" required> Sí</label></li>
+      <li><label><input type="radio" name="pasantia" value="no"> No</label></li>
+    </ul>
+  </fieldset>
+
+  <label>Localidad de la pasantía <input type="text" name="localidad_pasantia"></label>
+  <label>Institución donde practica <input type="text" name="institucion_pasantia"></label>
+
+  <fieldset class="bloque">
+    <legend>¿Tenés alguna formación o título profesional?</legend>
+    <ul class="lista-campo">
+      <li><label><input type="radio" name="titulo" value="si" required> Sí</label></li>
+      <li><label><input type="radio" name="titulo" value="no"> No</label></li>
+    </ul>
+  </fieldset>
+
+  <label>Institución en la que se graduó <input type="text" name="institucion_graduacion"></label>
+
+  <fieldset class="bloque">
+  <legend>Documentación</legend>
+  <p class="subtexto">Podés adjuntar tu certificado de alumno regular, de pasante y/o título obtenido.</p>
+
+  <label class="dropzone" for="documentacion">
+    <div class="dropzone__content">
+      <span class="dropzone__icon" aria-hidden="true"></span>
+      <span class="dropzone__text">Subir archivo PDF o imagen</span>
+      <span class="dropzone__hint">Arrastrá y soltá, o hacé clic para seleccionar</span>
+    </div>
+  </label>
+
+  <input id="documentacion" type="file" name="documentacion" accept=".pdf,image/*" class="dropzone__input">
+</fieldset>
+
+  <div class="botones">
+    <button type="submit">CONTINUAR</button>
+    <button type="button">VOLVER</button>
+  </div>
+</form>
+
+</body>
+</html>

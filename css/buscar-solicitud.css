@@ -1,0 +1,181 @@
+/* === Estilos generales === */
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #004074;
+  background-color: #f3f4f6;
+  margin: 0;
+}
+
+/* === Header === */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* centramos el logo */
+  padding: 8px 16px;
+  border-bottom: 2px solid #e6e6e6;
+  position: relative;
+}
+
+.header-left,
+.header-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-left {
+  left: 16px;
+}
+
+.header-left img{
+  width: 3em;
+}
+
+.header-right {
+  right: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+/* === Sección principal === */
+.main-section {
+  padding: 1em;
+}
+
+.section-title {
+  color: #004074;
+  border-bottom: 2px solid #7cd0ec;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+/* === Pills === */
+.pills-container {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 8px;
+  justify-content: flex-start;
+  padding: 4px 0;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pill {
+  background-color: #7cd0ec;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pill:hover {
+  background-color: #56b9d8;
+}
+
+/* === Tarjetas === */
+.card {
+  border-radius: 25px;
+  background-color: #fff;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+  margin-bottom: 1.5em;
+  margin-top: 1.5em;
+  overflow: hidden;
+  transition: transform 0.15s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+.card-row {
+  padding: 5px;
+  display: flex;
+  align-items: stretch;
+  height: 7.7em;
+}
+
+.text-container {
+  width: 5em;
+}
+
+.type {
+  width: 9em;
+}
+
+/* Colores específicos */
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 7em;
+  width: 30%;
+  border-radius: 27px;
+}
+
+.icon-container.azul { background-color: #84E1EB; }
+.icon-container.naranja { background-color: #FFA979; }
+.icon-container.amarillo { background-color: #F3D353; }
+
+.icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.info-container {
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  color: #002b5c;
+  padding-top: 0.4em;
+}
+
+.info-container p {
+  margin: 4px 0;
+  font-size: 14px;
+}
+
+/* === Responsive WEB === */
+@media screen and (min-width: 768px) {
+  body {
+    padding: 0 10%;
+  }
+
+  .card {
+    margin: 20px auto;
+  }
+
+  .text-container {
+    width: 10em;
+  }
+
+  .icon {
+    width: 45px;
+    height: 45px;
+  }
+
+  .info-container p {
+    font-size: 15px;
+  }
+
+  .pills-container {
+    overflow-x: visible;
+    justify-content: space-between;
+  }
+
+  .pill {
+    flex: 1;
+    text-align: center;
+  }
+}
