@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis solicitudes</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/mis-solicitudes.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <img src="img/usuario-adulto-mayor.png" class="user-icon">
+        </div>
+        <img src="img/logo.png" class="logo" onclick="window.location.href='mis-solicitudes.html'">
+        <div class="header-right">
+            <img src="img/menu-hamburguesa.png" class="menu-hamburguesa">
+        </div>
+    </header>
+
+    <section class="w3-container main-section">
+
+        <h5 class="section-title">
+            <b>MIS SOLICITUDES</b>
+        </h5>
+
+        <div class="w3-card card">
+            <div class="w3-row card-row">
+                <div class="informacion-usuario">
+                    <div class="foto-voluntario">
+                        <img src="img/usuario-icono.png" alt="Foto usuario voluntario">
+                    </div>
+                    <div class="datos-voluntario">
+                        <p class="titulo">Voluntario:</p>
+                        <p>Daniel Laborda</p>
+                        <p class="titulo">Tipo:</p>
+                        <p>Compras</p>
+                    </div>
+                    <div class="datos-voluntario">
+                        <p class="titulo">Horario:</p>
+                        <p>10:00hs</p>
+                        <p class="titulo">Estado:</p>
+                        <p>Pendiente</p>
+                    </div>
+                </div>
+            </div>
+            <div class="w3-row card-row botones" id="botones-iniciales">
+                <button class="boton-cancelar">CANCELAR</button>
+                <button class="boton-aceptar" id="btn-llego-voluntario">LLEGÓ EL VOLUNTARIO</button>
+            </div>
+
+            <div class="w3-row card-row botones" id="botones-voluntario" style="display:none;">
+                <button class="boton-cancelar-gris">CANCELAR</button>
+                <button class="boton-finalizar" onclick="window.location.href='dejar-resena.html'">FINALIZAR AYUDA</button>
+            </div>
+        </div>
+
+        <div class="botones">
+            <button class="boton-solicitar-ayuda" onclick="window.location.href='formularios.html?tipo=ayuda'">SOLICITAR
+                AYUDA</button>
+        </div>
+
+    </section>
+
+    <script>
+        document.getElementById("btn-llego-voluntario").addEventListener("click", function () {
+            document.getElementById("botones-iniciales").style.display = "none";
+            document.getElementById("botones-voluntario").style.display = "flex";
+        });
+    </script>
+</body>
+
+</html>
