@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dejar reseña</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="css/dejar-resena.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-left">
+            <img src="img/usuario-adulto-mayor.png" class="user-icon">
+        </div>
+        <img src="img/logo.png" class="logo" onclick="window.location.href='mis-solicitudes.html'">
+        <div class="header-right">
+            <img src="img/menu-hamburguesa.png" class="menu-hamburguesa">
+        </div>
+    </header>
+
+    <section class="review-container">
+
+        <div class="card">
+            <img src="img/usuario-icono.png" alt="Foto perfil" class="foto-perfil">
+
+            <h2 class="titulo">¿Cómo fue tu experiencia con Daniel?</h2>
+            <p class="subtitulo">Tocá las estrellas para calificarlo</p>
+
+            <div class="estrellas">
+                <img src="img/calificacion.png" alt="Puntaje calificación">
+            </div>
+
+            <p class="comentario">¿Querés dejarle un comentario?</p>
+
+            <textarea class="comentario-caja" placeholder="Ej: fue muy amable y puntual"></textarea>
+
+        </div>
+
+        <div class="agregar-favorito">
+            <button class="boton-favorito">AGREGAR A FAVORITOS <img src="img/favorito.png" alt="Favorito" class="icono-favorito"></button>
+        </div>
+
+        <div class="botones">
+            <button class="boton-omitir" onclick="window.location.href='mis-solicitudes.html'">OMITIR</button>
+            <button class="boton-enviar" onclick="window.location.href='mis-solicitudes.html'">ENVIAR RESEÑA</button>
+        </div>
+
+    </section>
+
+</body>
+
+</html>
