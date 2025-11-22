@@ -1,0 +1,158 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  color: #004074;
+  background-color: #f3f4f6;
+  margin: 0;
+  font-size: 14px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  border-bottom: 2px solid #e6e6e6;
+  position: relative;
+}
+
+.header-left,
+.header-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.header-left {
+  left: 16px;
+}
+
+.header-left img{
+  width: 3em;
+}
+
+.header-right {
+  right: 16px;
+}
+
+.logo {
+  width: 50px;
+  height: auto;
+}
+
+.detalle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.mapa img {
+    width: 100%;
+    padding: 20px;
+}
+
+.user-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.icono-usuario img{
+    width: 4.3em;
+    margin-left: 1em;
+}
+
+.detalle-texto {
+    padding-right: 2em;
+}
+
+.detalle p {
+    margin: 0;
+}
+
+.titulo {
+    font-weight: bolder;
+}
+
+.info-categorias {
+    padding-left: 3em;
+    padding-top: 1.5em;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  padding: 1.5em;
+}
+
+button {
+  all: unset;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.9rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+  letter-spacing: 1px;
+  text-align: center;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  width: 90%;
+  max-width: 280px;
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.boton-cancelar {
+  background-color: #F35353;
+  color: white;
+}
+
+.boton-cancelar:hover {
+  background-color: #E41717;
+}
+
+.boton-aceptar {
+  background-color: #ACEB75;
+  color: black;
+}
+
+.boton-aceptar:hover {
+  background-color: #51ad55;
+}
+
+.volver {
+  text-align: center;
+  padding-top: 1em;
+}
+
+.volver a {
+  color: #004074;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) { 
+    .mapa {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .mapa img {
+        width: 50%;
+    }
+    .info-categorias {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .info-categorias p{
+        padding: 3em;
+    }
+    .botones {
+        justify-content: center;
+    }
+}

@@ -1,0 +1,204 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #004074;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+}
+
+.header-left,
+.header-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-left {
+    left: 16px;
+}
+
+.header-left img {
+    width: 3em;
+}
+
+.header-right {
+    right: 16px;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.main-section {
+    padding: 1em;
+}
+
+.section-title {
+    color: #004074;
+    border-bottom: 2px solid #7cd0ec;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.card {
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5em;
+    margin-top: 1.5em;
+    overflow: hidden;
+    transition: transform 0.15s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+}
+
+.card-row {
+    padding: 5px;
+    display: flex;
+    align-items: stretch;
+    height: 6.5em;
+}
+
+.informacion-usuario {
+    display: flex;
+    flex-direction: row;
+}
+
+.foto-voluntario img {
+    width: 6.5em;
+    padding: 0.5em;
+}
+
+.datos-voluntario {
+    width: 10em;
+    margin-top: 6px;
+    padding-left: 1em;
+}
+
+.datos-voluntario p {
+    margin: 0;
+}
+
+.titulo {
+    font-weight: bolder;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    align-items: center;
+    padding: 0;
+}
+
+button {
+    all: unset;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    letter-spacing: 1px;
+    text-align: center;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+    width: 90%;
+    max-width: 100%;
+}
+
+button:active {
+    transform: translateY(1px);
+}
+
+.boton-cancelar {
+    background-color: #F35353;
+    color: white;
+    width: 65px;
+    padding-right: 28px;
+    padding-left: 9px;
+}
+
+.boton-cancelar:hover {
+    background-color: #E41717;
+}
+
+.boton-aceptar {
+    background-color: #ACEB75;
+    color: black;
+}
+
+.boton-aceptar:hover {
+    background-color: #51ad55;
+}
+
+.boton-cancelar-gris {
+    background-color: #d4d4d4;
+    color: #333;
+    width: 65px;
+    padding-right: 28px;
+    padding-left: 9px;
+}
+
+.boton-cancelar-gris:hover {
+    background-color: #bfbfbf;
+}
+
+.boton-finalizar {
+    background-color: #004074;
+    color: white;
+}
+
+.boton-finalizar:hover {
+    background-color: #00335c;
+}
+
+.solicitar-ayuda {
+    width: 4em;
+}
+
+.boton-solicitar-ayuda {
+    background-color: #004074;
+    color: white;
+    margin-top: 25em;
+}
+
+.boton-solicitar-ayuda:hover {
+    background-color: #00335c;
+}
+
+
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 10%;
+    }
+
+    .card {
+        margin: 20px auto;
+    }
+
+    .informacion-usuario {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .boton-cancelar {
+        width: 40%;
+    }
+
+    .boton-cancelar-gris {
+        width: 40%;
+    }
+}
