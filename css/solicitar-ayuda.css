@@ -1,0 +1,178 @@
+/* === Estilos generales === */
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #004074;
+    background-color: #f3f4f6;
+    margin: 0;
+  }
+  
+  /* === Header === */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+  }
+  
+  .header-left,
+  .header-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .header-left { left: 16px; }
+  .header-right { right: 16px; }
+  
+  .logo {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+  }
+  
+  .user-icon,
+  .menu-hamburguesa {
+    width: 32px;
+    height: auto;
+  }
+  
+  /* === Sección principal === */
+  .main-section {
+    padding: 1em;
+  }
+  
+  .section-title {
+    color: #004074;
+    border-bottom: 2px solid #7cd0ec;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+    font-weight: 900;
+  }
+  
+  .subtitulo {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1.2rem;
+    text-align: center;
+  }
+  
+  /* === Tarjetas === */
+  .ayuda-card {
+    border-radius: 25px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    margin-bottom: 1.5em;     /* separación entre tarjetas */
+    overflow: hidden;
+    transition: transform 0.15s ease-in-out;
+  }
+  
+  .ayuda-card:hover {
+    transform: translateY(-3px);
+  }
+  
+  .ayuda-row {
+    padding: 8px;
+    display: flex;
+    align-items: stretch;
+    height: 7.7em;            /* altura igual a la maqueta */
+  }
+  
+  /* Icon container */
+  .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 30%;
+    border-radius: 27px;
+  }
+  
+  .icon-container.celeste   { background-color: #7cd0ec; }
+  .icon-container.violeta   { background-color: #b39ddb; }
+  .icon-container.naranja   { background-color: #ffa979; }
+  .icon-container.rosa      { background-color: #f48fb1; }
+  .icon-container.verde     { background-color: #81c784; }
+  .icon-container.rojo      { background-color: #e57373; }
+  .icon-container.azul      { background-color: #64b5f6; }
+  .icon-container.amarillo  { background-color: #fdd835; }
+  
+  .icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  /* Info */
+  .info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.4rem;
+    padding-left: 1.2rem;
+    width: 70%;
+    color: #004074;
+  }
+  
+  .dato {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .etiqueta {
+    font-weight: 600;
+  }
+  
+  .valor {
+    font-weight: 400;
+    text-align: right;
+  }
+  
+  /* === Botón volver === */
+  .volver-container {
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .volver-link {
+    color: #004074;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  .volver-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* === Responsive === */
+  @media screen and (min-width: 768px) {
+    body {
+      padding: 0 10%;
+    }
+  
+    .ayuda-card {
+      margin: 20px auto;
+    }
+  
+    .icon {
+      width: 48px;
+      height: 48px;
+    }
+  
+    .info-container {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .dato {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .valor {
+      text-align: left;
+    }
+  }
+  
