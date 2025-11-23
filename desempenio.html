@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/desempenio.css" > 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <title>Desempeño</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-left">
+            <img src="img/usuario-icono.png" class="user-icon">
+        </div>
+        <img src="img/logo.png" class="logo" onclick="window.location.href='solicitudes-espera.html'">
+        <div class="header-right">
+            <a href="menu-expandido-voluntario.html"><img src="img/menu-hamburguesa.png" class="menu-hamburguesa"></a>
+        </div>
+    </header>
+    <main class="main ">
+        <div class="desempenio">
+            <h5 class="title">MI DESEMPEÑO</h5>
+            <div class="line"></div>
+            <div class="bajada">
+                <p>Acá podés ver tu progreso, actividad y el impacto que genera tu voluntariado</p>
+            </div>
+        </div>
+        <section class="actividad">
+            <h2 class="subtitle">Actividad</h2>
+            <p>Horas de voluntariado completadas</p>
+            <div class="cantHoras-contenedor">
+                <div class="cantHoras">
+                    <button class="cantHoras-button activo">Diarias</button>
+                    <button class="cantHoras-button">Semanales</button>
+                    <button class="cantHoras-button">Mensuales</button>
+                </div>
+            </div> 
+                <div class="cantHoras_contenedor-grafico">
+                    <canvas class="cantHoras-grafico" id="cantHoras-grafico"></canvas>
+                </div>
+            <div class="line"></div>
+        </section>
+        <section class="solicitudes">
+            <div class="solicitudes-contenedor primero">
+                <h2 class="subtitle">Solicitudes</h2>
+                <div class="solicitudes-contenedor-primero">
+                    <button id="aceptadas-button" class="solicitud activoAceptadas">
+                        <div class="solicitud-principio">
+                            <svg class="tick" viewBox="0 0 512 512">
+                                <path
+                                style="fill:#b4eb84;stroke-width:2;fill-opacity:1"
+                                d="M 229.85572,499.08283 C 59.794864,481.3995 -41.602554,298.11439 33.883059,144.84434 124.89019,-39.94143 389.65207,-38.357402 478.20839,147.50266 560.54986,320.31905 420.28545,518.88416 229.85572,499.08283 Z m 47.82829,-37.95268 C 422.5817,445.18898 506.77075,290.80991 441.75128,160.27687 379.02877,34.355203 211.10075,5.3904596 110.75187,103.18507 -17.971143,228.63156 56.720667,440.73337 236.97844,461.62979 c 8.18264,0.94859 29.97313,0.68112 40.70557,-0.49964 z m -85.46433,-95.23863 c -3.86797,-1.72375 -82.33085,-78.275 -85.42269,-83.3415 -6.65287,-10.90184 1.01822,-26.15829 13.88168,-27.60819 9.23142,-1.04051 10.23714,-0.29061 45.3094,33.78411 l 33.70916,32.75038 88.66306,-89.38361 c 54.11294,-54.55266 90.15846,-90.0084 92.50058,-90.987 15.68941,-6.55547 31.64497,9.34668 24.93156,24.84811 -2.10707,4.86524 -194.05297,197.91623 -198.72369,199.86778 -4.6881,1.95882 -10.54855,1.98641 -14.84906,0.0699 z"
+                                id="path845" />
+                            </svg>
+                            <span>Aceptadas:</span>
+                        </div>
+                        <span class="cantSolicitudes">44</span>
+                    </button>
+                    <button id="rechazadas-button" class="solicitud " >
+                        <div class="solicitud-principio">
+                            <svg class="cancel" viewBox="0 0 512 512">
+                            <path
+                                style="fill:#eb8484;stroke-width:2;fill-opacity:1"
+                                d="M 231.32893,497.03763 C 32.059306,476.38883 -54.702422,234.45384 86.607753,93.48273 229.13178,-48.69934 472.30682,40.532183 490.17124,241.56775 503.09161,386.96621 376.34213,512.06424 231.32893,497.03763 Z m 52.7717,-38.3314 C 438.17436,434.63734 507.02319,251.69426 406.95287,132.26703 330.90579,41.509952 190.0619,37.225528 109.15046,123.20798 -6.193565,245.78104 68.937039,442.69495 237.80967,460.41796 c 7.53172,0.79045 37.32616,-0.31128 46.29096,-1.71173 z M 177.32429,345.12458 c -7.98317,-3.95156 -12.02963,-16.06814 -8.02276,-24.02307 0.87368,-1.73452 14.34503,-15.9647 29.93633,-31.62262 l 28.3478,-28.46894 -28.3478,-28.46894 c -30.19322,-30.32222 -31.32755,-31.74307 -31.32755,-39.2405 0,-10.79207 7.36252,-18.39175 17.8178,-18.39175 8.17487,0 9.14103,0.76026 39.80723,31.32355 l 28.46172,28.3662 28.47617,-28.35502 c 31.2925,-31.15937 32.00733,-31.70878 40.54866,-31.16491 10.5523,0.67192 17.09081,7.64312 17.09081,18.22193 0,7.49743 -1.13432,8.91828 -31.32751,39.2405 l -28.34784,28.46894 28.34784,28.46894 c 30.19319,30.32222 31.32751,31.74307 31.32751,39.2405 0,10.57881 -6.53851,17.55001 -17.09081,18.22193 -8.54133,0.54387 -9.25616,-0.006 -40.54866,-31.16491 l -28.47617,-28.35502 -28.46172,28.3662 c -33.8776,33.76391 -36.29533,35.23513 -48.21105,29.33699 z"
+                                id="path863" />
+                            </svg>
+                            <span>Rechazadas:</span>
+                        </div>
+                        <span class="cantSolicitudes">5</span>
+                    </button>
+                </div>
+            </div>
+            <div class="solicitudes-contenedor segundo">
+                <div class="solicitudesAceptadas-contenedor">
+                    <canvas class="solicitudesAceptadas-grafico" id="solicitudesAceptadas-grafico"></canvas>
+                </div>
+                <div class="leyenda">
+                    <div class="leyenda-custom">
+                        <div class="item">
+                            <span class="color c1"></span> Traslado al médico
+                        </div>
+                        <div class="item">
+                            <span class="color c2"></span> Trámites
+                        </div>
+                        <div class="item">
+                            <span class="color c3"></span> Tareas del hogar
+                        </div>
+                        <div class="item">
+                            <span class="color c4"></span> Compras
+                        </div>
+                        <div class="item">
+                            <span class="color c5"></span> Caminata
+                        </div>
+                        <div class="item">
+                            <span class="color c6"></span> Pasear al perro
+                        </div>
+                        <div class="item">
+                            <span class="color c7"></span> Ayuda tecnológica
+                        </div>
+                        <div class="item">
+                            <span class="color c8"></span> Compañía
+                        </div>
+                    </div>
+            </div>
+            </div>
+
+            
+        </section>
+        <section class="valoracionGeneral">
+            <div class="line"></div>
+            <h2 class="subtitle">Valoración general</h2>
+                <div class="valoracion-contenedor">
+                    <div class="caracteristicas">
+                        <span class="caracteristicas-item">Puntualidad</span>
+                        <span class="caracteristicas-item">Responsabilidad</span>
+                        <span class="caracteristicas-item">Calidad del servicio</span>
+                        <span class="caracteristicas-item">Frecuencia de participación</span>
+                        <span class="caracteristicas-item">Variedad de tareas</span>
+                    </div>
+                    <div class="valoracion-contenedor-canvas">
+                        <canvas class="valoracion-grafico" id="valoracion-grafico"></canvas>
+                    </div>
+                    <div class="niveles">
+                        <span class="niveles-item">Media</span>
+                        <span class="niveles-item">Alta</span>
+                        <span class="niveles-item">Alta</span>
+                        <span class="niveles-item">Baja</span>
+                        <span class="niveles-item">Alta</span>
+                    </div>
+                </div>
+                <div class="line"></div>
+        </section>
+        <section class="resenias-contenedor">
+            <h2 class="subtitle">Reseñas de mi trabajo</h2>
+            <div class="resenias-section">
+                <div class="puntuacion-contenedor">
+                    <h1 class="promedio data">4.5 /5</h1>
+                    <div class="estrellitas">
+                        <div class="stars">
+                        <img class="stars-item" src="img/Estrella completa.svg" alt="estrella completa">
+                        <img class="stars-item" src="img/Estrella completa.svg" alt="estrella completa">
+                        <img class="stars-item" src="img/Estrella completa.svg" alt="estrella completa">
+                        <img class="stars-item" src="img/Estrella completa.svg" alt="estrella completa">
+                        <img class="stars-item" src="img/Media estrella.svg" alt="media estrella">
+                        </div>
+                        <span class="data">(30 valoraciones)</span>
+                    </div>
+                </div>
+
+                <div class="reseniasEscritas">
+                    <div class="reseniasEscritas-contenedor">
+                        <div class="resenia">
+                            <div class="resenia-perfil">
+                                <img src="img/perfil.svg" alt="icono de perfil" class="perfil">
+                                <p class="data">María Inés</p>
+                            </div>
+                            <div class="resenia-valoracion">
+                                <div class="starsMini">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella vacía.svg" alt="media estrella">
+                                </div>
+                                <span class="data">Hace 3 días</span>
+                            </div>
+                            <p>
+                                Daniel fue muy atento, me acompañó al médico 
+                                y me ayudó a subir las escaleras. Muy amable.
+                            </p>
+                        </div>
+                        <div class="line-resenia"></div>
+                        <div class="resenia">
+                            <div class="resenia-perfil">
+                                <img src="img/perfil.svg" alt="icono de perfil" class="perfil">
+                                <p class="data">José Pedrada</p>
+                            </div>
+                            <div class="resenia-valoracion">
+                                <div class="starsMini">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella completa.svg" alt="estrella completa">
+                                    <img class="starsMini-item" src="img/Estrella vacía.svg" alt="media estrella">
+                                </div>
+                                <span class="data">Hace 6 días</span>
+                            </div>
+                            <p>
+                                Llegó puntual y me ayudó con las compras del supermercado. 
+                                Muy buen chico, volvería a pedirlo.
+                            </p>
+                        </div>
+                        <a href="" class="resenias">Ver todas las reseñas ></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="descargar">
+            <button class="descargar-button">DESCARGAR DESEMPEÑO</button>
+        </div>
+    </main>
+    <footer></footer>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/desempenio.js"></script>
+</body>
+</html>
