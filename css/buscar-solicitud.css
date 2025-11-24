@@ -43,11 +43,13 @@ body {
 }
 
 .section-title {
+  font-family: 'Roboto', sans-serif;
   color: #004074;
   border-bottom: 2px solid #7cd0ec;
   padding-bottom: 4px;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-weight: bold;
+  font-size: 24px;
 }
 
 .pills-container {

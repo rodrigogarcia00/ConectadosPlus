@@ -39,21 +39,31 @@ body {
   height: auto;
 }
 
+.titulo-principal {
+    border-bottom: 2px solid #004074;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 22px;
+}
+
 .detalle {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 1em;
 }
 
 .mapa img {
     width: 100%;
-    padding: 20px;
 }
 
 .user-info {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+    margin-top: 1em;
 }
 
 .icono-usuario img{
@@ -135,7 +145,13 @@ button:active {
   cursor: pointer;
 }
 
-@media screen and (min-width: 768px) { 
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 10%;
+    }
+    button {
+        width: 100%;
+    }
     .mapa {
         width: 100%;
         display: flex;

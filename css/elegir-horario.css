@@ -1,0 +1,161 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #004074;
+    background-color: #f3f4f6;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border-bottom: 2px solid #e6e6e6;
+    position: relative;
+    height: 5em;
+}
+
+.header-left,
+.header-right {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.header-left {
+    left: 16px;
+}
+
+.header-left img {
+    width: 4em;
+}
+
+.header-right {
+    right: 16px;
+    
+}
+
+.header-right img {
+    width: 4em;
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+}
+
+.main-section {
+    padding: 1em;
+}
+
+.titulo {
+    border-bottom: 2px solid #004074;
+    padding-bottom: 4px;
+    margin-bottom: 15px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.subtitulo {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.horario-contenedor {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin: 20px 0;
+  margin-top: 6em;
+}
+
+.horario {
+  text-align: center;
+  width: 8em;
+}
+
+.horario label {
+  display: block;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.caja-horario {
+  background: white;
+  border-radius: 12px;
+  font-size: 5em;
+  font-weight: bold;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.separador {
+  font-size: 5em;
+  font-weight: bold;
+  margin-top: 21px;
+}
+
+.botones {
+    display: flex;
+}
+
+button {
+    all: unset;
+    font-weight: 600;
+    padding: 0.9rem 1.5rem;
+    border-radius: 8px;
+    cursor: pointer;
+    letter-spacing: 1px;
+    text-align: center;
+    width: 90%;
+    max-width: 100%;
+}
+
+.boton-enviar-solicitud {
+    background-color: #004074;
+    color: white;
+    margin-top: 10em;
+}
+
+.boton-enviar-solicitud:hover {
+    background-color: #00335c;
+}
+
+.cambiar-voluntario {
+  text-align: center;
+  padding-top: 2em;
+}
+
+.cambiar-voluntario a {
+  color: #004074;
+  text-decoration: underline;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        padding: 0 10%;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .horario {
+        width: 16em;
+    }
+
+    .horario label {
+        font-size: 22px;
+    }
+
+    .caja-horario {
+        font-size: 8em;
+    }
+
+    .separador {
+        font-size: 7em;
+    }
+}

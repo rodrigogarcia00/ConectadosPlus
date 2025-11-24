@@ -66,6 +66,7 @@ body {
     margin-bottom: 1.5em;     /* separación entre tarjetas */
     overflow: hidden;
     transition: transform 0.15s ease-in-out;
+    cursor: pointer;
   }
   
   .ayuda-card:hover {
