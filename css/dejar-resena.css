@@ -12,6 +12,7 @@ body {
     padding: 8px 16px;
     border-bottom: 2px solid #e6e6e6;
     position: relative;
+    height: 5em;
 }
 
 .header-left,
@@ -26,11 +27,16 @@ body {
 }
 
 .header-left img {
-    width: 3em;
+    width: 4em;
 }
 
 .header-right {
     right: 16px;
+    
+}
+
+.header-right img {
+    width: 4em;
 }
 
 .logo {
@@ -64,6 +70,7 @@ body {
 }
 
 .titulo {
+    font-family: 'Roboto', sans-serif;
     font-size: 25px;
     color: #003F73;
     font-weight: bold;

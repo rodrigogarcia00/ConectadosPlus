@@ -44,10 +44,12 @@ body {
 
 .section-title {
   color: #004074;
-  border-bottom: 2px solid #7cd0ec;
+  border-bottom: 2px solid #004074;
   padding-bottom: 4px;
   margin-bottom: 15px;
-  font-weight: 700;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .card {
