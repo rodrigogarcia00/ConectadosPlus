@@ -26,7 +26,7 @@ body {
   left: 16px;
 }
 
-.header-left img{
+.header-left img {
   width: 3em;
 }
 
@@ -40,52 +40,59 @@ body {
 }
 
 .titulo-principal {
-    border-bottom: 2px solid #004074;
-    padding-bottom: 4px;
-    margin-bottom: 15px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 22px;
+  border-bottom: 2px solid #004074;
+  padding-bottom: 4px;
+  margin-bottom: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .detalle {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 1em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1em;
 }
 
-.mapa img {
-    width: 100%;
+.mapa {
+  width: 100%;
+  max-width: 600px;
+}
+
+.mapa iframe {
+  border: 0;
+  width: 100%;
+  height: 26em;
 }
 
 .user-info {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 1em;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 1em;
 }
 
-.icono-usuario img{
-    width: 4.3em;
-    margin-left: 1em;
+.icono-usuario img {
+  width: 4.3em;
+  margin-left: 1em;
 }
 
 .detalle-texto {
-    padding-right: 2em;
+  padding-right: 2em;
 }
 
 .detalle p {
-    margin: 0;
+  margin: 0;
 }
 
 .titulo {
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 .info-categorias {
-    padding-left: 3em;
-    padding-top: 1.5em;
+  padding-left: 3em;
+  padding-top: 1.5em;
 }
 
 .botones {
@@ -106,7 +113,7 @@ button {
   transition: background-color 0.2s ease, transform 0.1s ease;
   letter-spacing: 1px;
   text-align: center;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
   width: 90%;
   max-width: 280px;
 }
@@ -146,29 +153,32 @@ button:active {
 }
 
 @media screen and (min-width: 768px) {
-    body {
-        padding: 0 10%;
-    }
-    button {
-        width: 100%;
-    }
-    .mapa {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-    .mapa img {
-        width: 50%;
-    }
-    .info-categorias {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-    .info-categorias p{
-        padding: 3em;
-    }
-    .botones {
-        justify-content: center;
-    }
+  body {
+    padding: 0 10%;
+  }
+
+  button {
+    width: 100%;
+  }
+
+  .mapa {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+  }
+
+  .info-categorias {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .info-categorias p {
+    padding: 3em;
+  }
+
+  .botones {
+    justify-content: center;
+  }
 }
