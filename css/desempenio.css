@@ -49,13 +49,10 @@ body {
     margin: 0em 1em;
 }
 .title{
-    font-size: 18px;
-    font-family: "Segoe UI", Arial, sans-serif;
-    font-weight: 700;
+    font-size: 24px;
 }
 .subtitle{
-    font-size: 16px;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
 }
 p, span{
     font-size: 15px;
@@ -278,6 +275,7 @@ p, span{
     flex-direction: row;
     align-items: center;
     gap: 1em;
+    margin-bottom: 5px;
 }
 .resenia-valoracion{
     display: flex;
@@ -412,13 +410,24 @@ p, span{
     .cantHoras_contenedor-grafico{
         padding: 0;
     }
+    .cantHoras{
+        gap: 0.5em;
+        padding: 0.5em;
+    }
+    .cantHoras-button{
+        padding: 0.7em;
+    }
     .solicitud{
-        height: 50px;
-        justify-content: flex-start;
         gap: 2px;
+        padding: 5px 15px;
+        height: auto;
+        justify-content: flex-start;
+        flex-direction: column;
+        width: 120px;
     }
     .solicitudes-contenedor-primero{
         flex-direction: row;
+        justify-content: center;
     }
     .solicitudes{
         flex-direction: column;
@@ -426,21 +435,68 @@ p, span{
     }
     .solicitud-principio{
         gap: 5px;
+        flex-direction: column;
     }
     .cancel, .tick{
         width: 25px;
         height: 25px;
     }
     .solicitudesAceptadas-contenedor{
-        width: 60%;
+        width: 100%;
     }
     .leyenda{
         display: none;
     }
     .segundo{
-        width: 100%;
-        gap: 0;
+         gap: 0;
         align-items: center;
         flex-direction: column;
+        margin: 1em 15%; 
+        width: 70%;
+    }
+    .primero{
+        width: 100%;
+    }
+    .resenias-section{
+        flex-direction: column;
+    }
+    .puntuacion-contenedor{
+        flex-direction: row;
+        align-items: center;
+        gap: 1em;
+    }
+    .estrellitas{
+        flex-direction: row;
+        align-items: center;
+    }
+    .invisible{
+        display: none;
+    }
+    .promedio{
+        font-size: 28px;
+    }
+    .stars-item{
+        width: 25px;
+        height: 25px;
+    }
+    .reseniasEscritas-contenedor{
+        width: 100%;
+    }
+    .resenia{
+        padding: 0;
+    }
+    .valoracion-contenedor{
+        grid-template-columns: 0.5fr 1fr auto;
+        gap: 1em;
+    }
+    .caracteristicas{
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+    .respons{
+        margin-top: 10px;
+    }
+    .calidad{
+        margin-top: 5px;
     }
 }

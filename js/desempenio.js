@@ -39,7 +39,7 @@ new Chart(graficoHoras, {
                             size: '14px' }
                         },
                     grid: {
-                        color: '#ffffffff' // líneas verticales
+                        color: 'transparent' // líneas verticales
                     }
             },
             y:{
