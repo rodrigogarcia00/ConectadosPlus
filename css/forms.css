@@ -154,6 +154,12 @@ button[type="button"] {
   color: var(--color-principal);
 }
 
+.direccion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 @media (max-width: 600px) {
   .formulario {
     padding: 1rem;
