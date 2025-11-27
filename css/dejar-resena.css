@@ -161,3 +161,16 @@ body {
     background-color: #51ad55;
     color: white;
 }
+
+.stars {
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 1px;
+    justify-content: center;
+}
+
+.stars-item{
+    width: 31px;
+    height: 30px;
+}

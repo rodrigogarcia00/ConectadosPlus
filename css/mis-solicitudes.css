@@ -176,10 +176,26 @@ button:active {
     width: 4em;
 }
 
+.contenedor-boton-solicitar-ayuda {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
 .boton-solicitar-ayuda {
     background-color: #004074;
     color: white;
-    margin-top: 25em;
+    padding: 0.9rem 1.5rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    width: 80%;
+    max-width: 350px;
 }
 
 .boton-solicitar-ayuda:hover {
@@ -208,5 +224,8 @@ button:active {
 
     .boton-cancelar-gris {
         width: 40%;
+    }
+    .boton-solicitar-ayuda {
+        padding: 0.6em 30%;
     }
 }

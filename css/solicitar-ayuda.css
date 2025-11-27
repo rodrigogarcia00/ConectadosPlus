@@ -22,12 +22,16 @@ body {
     top: 50%;
     transform: translateY(-50%);
   }
+
+  .header-right img {
+    width: 4em;
+  }
   
   .header-left { left: 16px; }
   .header-right { right: 16px; }
   
   .logo {
-    width: 50px;
+    width: 4em;
     height: auto;
     cursor: pointer;
   }
